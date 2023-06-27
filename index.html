@@ -21,9 +21,9 @@
             <div class="col-auto mr-auto pb-5">
             </div>
             <div class="col-auto animate__animated animate__backInRight">
-                <button class="mt-5">Work</button>
-                <button class="ml-3 mt-5">About</button>
-                <button class="ml-3 mt-5">Contact</button>
+                <button class="mt-5" id="scrollButton">Work</button>
+                <button class="ml-3 mt-5" id="scrollSecondButton">About</button>
+                <button class="ml-3 mt-5" id="scrollThirdButton">Contact</button>
             </div>
         </div>
     </div>
@@ -44,7 +44,8 @@
     </section>
     <section class="second_section">
         <div class="container">
-            <p class="ml-3"><span class="work">Featured work</span><span class="date"> · 2018–2022</span></p>
+            <p id="targetParagraph"
+               class="ml-3"><span class="work">Featured work</span><span class="date"> · 2018–2022</span></p>
             <div class="row justify-content-between">
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div>
@@ -111,7 +112,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <span class="left_block">About me</span>
+                    <span id="targetSpan"
+                          class="left_block">About me</span>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <p class="right_block pl-4">Phasellus accumsan rutrum lacus eget<br>
@@ -198,7 +200,7 @@
     </section>
     <section class="fifth_section">
         <div class="container last_section">
-            <div class="text-center pt-5">
+            <div class="text-center pt-5" id="targetDiv">
                 <h3 class="pt-5">Want to create<br>something awesome?<br>Drop me an email.</h3>
                 <div class="pb-5 pt-2">
                     <a class="pb-5" href="#">→ Hi@email.com</a>
@@ -213,9 +215,9 @@
         <div class="row">
             <div class="col-auto mr-auto pb-5">
                 <a class="my_nav" href="#">Home</a>
-                <a class="ml-3 my_nav" href="#">Work</a>
-                <a class="ml-3 my_nav" href="#">About</a>
-                <a class="ml-3 my_nav" href="#">Contact</a>
+                <a class="ml-3 my_nav" href="#targetParagraph">Work</a>
+                <a class="ml-3 my_nav" href="#targetSpan">About</a>
+                <a class="ml-3 my_nav" href="#targetDiv">Contact</a>
             </div>
             <div class="col-auto">
                 <a class="my_nav" href="#">Twitter</a>
@@ -237,7 +239,7 @@
         </div>
     </div>
 </footer>
-
+<script src="node_modules/jquery/dist/jquery.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
