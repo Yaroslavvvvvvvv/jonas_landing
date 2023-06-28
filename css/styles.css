@@ -51,6 +51,7 @@ body .second_section .date {
 }
 body .second_section .bottom_block {
   background-color: #F7F7F7;
+  transition: background-color 0.8s ease;
   border-radius: 30px;
 }
 body .second_section .bottom_block .first {
