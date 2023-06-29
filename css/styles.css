@@ -218,6 +218,13 @@ body footer .my_nav {
   letter-spacing: 0.2px;
   text-decoration: none;
 }
+body footer .my_nav:hover {
+  color: #FFEBD8;
+  background-color: #000000;
+  border-radius: 30px;
+  padding: 10px;
+  transition: 0.1s;
+}
 body footer .next_nav {
   color: #000;
   font-size: 14px;
