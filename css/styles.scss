@@ -93,6 +93,26 @@ body {
       line-height: 23.4px;
       letter-spacing: 0.54px;
     }
+    #modal_first, #modal_second, #modal_third, #modal_fourth, #modal_fifth, #modal_sixth {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: 9999;
+    }
+
+    #image_first, #image_second, #image_third, #image_fourth, #image_fifth, #image_sixth {
+      max-width: 90%;
+      max-height: 90%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 9999;
+    }
 
     .bottom_block {
       background-color: #F7F7F7;

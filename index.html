@@ -50,7 +50,12 @@
             <div class="row justify-content-between">
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="pt-4">
-                        <img id="first_image" class="mw-100" src="./img/second_section/watch.png" alt="watch">
+                        <img id="first_image" class="mw-100" src="./img/second_section/watch.png" alt="watch"
+                        onclick="openModal()">
+                        <div class="animate__animated animate__backInLeft" id="modal_first">
+                            <img src="./img/second_section/watch.png" alt="enlarged picture" id="image_first"
+                            onclick="closeModal()">
+                        </div>
                         <div id="first_bottom" class="bottom_block">
                             <div class="pt-3 pl-4 pb-3">
                                 <span class="first pt-5">Rule ratio</span><br>
@@ -59,7 +64,12 @@
                         </div>
                     </div>
                     <div class="pt-4">
-                        <img id="second_image" class="mw-100" src="./img/second_section/castro.png" alt="page">
+                        <img id="second_image" class="mw-100" src="./img/second_section/castro.png" alt="page"
+                        onclick="secondOpenModal()">
+                        <div class="animate__animated animate__backInLeft" id="modal_second">
+                            <img src="./img/second_section/castro.png" alt="enlarged picture" id="image_second"
+                                 onclick="secondCloseModal()">
+                        </div>
                         <div id="second_bottom" class="bottom_block">
                             <div class="pt-3 pl-4 pb-3">
                                 <span class="first pt-5">Dry air</span><br>
@@ -68,7 +78,12 @@
                         </div>
                     </div>
                     <div class="pt-4">
-                        <img id="third_image" class="mw-100" src="./img/second_section/grey_phone.png" alt="phone">
+                        <img id="third_image" class="mw-100" src="./img/second_section/grey_phone.png" alt="phone"
+                             onclick="thirdOpenModal()">
+                        <div class="animate__animated animate__backInLeft" id="modal_third">
+                            <img src="./img/second_section/grey_phone.png" alt="enlarged picture" id="image_third"
+                                 onclick="thirdCloseModal()">
+                        </div>
                         <div id="third_bottom" class="bottom_block">
                             <div class="pt-3 pl-4 pb-3">
                                 <span class="first pt-5">Variable compose</span><br>
@@ -79,7 +94,12 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="pt-4">
-                        <img id="fourth_image" class="mw-100" src="./img/second_section/ball.png" alt="ball">
+                        <img id="fourth_image" class="mw-100" src="./img/second_section/ball.png" alt="ball"
+                        onclick="fourthOpenModal()">
+                        <div class="animate__animated animate__backInLeft" id="modal_fourth">
+                            <img src="./img/second_section/ball.png" alt="enlarged picture" id="image_fourth"
+                                 onclick="fourthCloseModal()">
+                        </div>
                         <div id="fourth_bottom" class="bottom_block">
                             <div class="pt-3 pl-4 pb-3">
                                 <span class="first pt-5">Situation</span><br>
@@ -88,7 +108,12 @@
                         </div>
                     </div>
                     <div class="pt-4">
-                        <img id="fifth_image" class="mw-100" src="./img/second_section/yellow_phone.png" alt="phone">
+                        <img id="fifth_image" class="mw-100" src="./img/second_section/yellow_phone.png" alt="phone"
+                             onclick="fifthOpenModal()">
+                        <div class="animate__animated animate__backInLeft" id="modal_fifth">
+                            <img src="./img/second_section/yellow_phone.png" alt="enlarged picture" id="image_fifth"
+                                 onclick="fifthCloseModal()">
+                        </div>
                         <div id="fifth_bottom" class="bottom_block">
                             <div class="pt-3 pl-4 pb-3">
                                 <span class="first pt-5">Vertical</span><br>
@@ -97,7 +122,12 @@
                         </div>
                     </div>
                     <div class="pt-4">
-                        <img id="sixth_image" class="mw-100" src="./img/second_section/last_phone.png" alt="phone">
+                        <img id="sixth_image" class="mw-100" src="./img/second_section/last_phone.png" alt="phone"
+                             onclick="sixthOpenModal()">
+                        <div class="animate__animated animate__backInLeft" id="modal_sixth">
+                            <img src="./img/second_section/last_phone.png" alt="enlarged picture" id="image_sixth"
+                                 onclick="sixthCloseModal()">
+                        </div>
                         <div id="sixth_bottom" class="bottom_block">
                             <div class="pt-3 pl-4 pb-3">
                                 <span class="first pt-5">Scope shift</span><br>
@@ -213,20 +243,21 @@
                             <div class="modal-content modal_background animate__animated animate__backInUp">
                                 <div class="modal-body">
                                     <form>
-                                    <div class="form-group">
-                                        <label for="recipient-name" class="col-form-label font-weight-bold">
-                                            My Email:</label>
-                                        <input type="text" class="form-control" id="recipient-name">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="message-text" class="col-form-label font-weight-bold">Message:
-                                        </label>
-                                        <textarea class="form-control" id="message-text"></textarea>
-                                    </div>
+                                        <div class="form-group">
+                                            <label for="recipient-name" class="col-form-label font-weight-bold">
+                                                My Email:</label>
+                                            <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="message-text" class="col-form-label font-weight-bold">Message:
+                                            </label>
+                                            <textarea class="form-control" id="message-text"></textarea>
+                                        </div>
                                     </form>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-dark form_button" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark form_button" data-dismiss="modal">Close
+                                    </button>
                                     <button type="button" class="btn btn-dark form_button">Send message</button>
                                 </div>
                             </div>
