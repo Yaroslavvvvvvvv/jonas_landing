@@ -188,16 +188,9 @@ body .fifth_section .last_section h3 {
   line-height: 73.6px;
   letter-spacing: 2.56px;
 }
-body .fifth_section .last_section a {
-  color: #000;
-  text-align: center;
-  font-size: 37px;
-  line-height: 52px;
-  letter-spacing: 1.2px;
-  text-decoration: none;
-}
-body .fifth_section .last_section a:hover {
-  color: #525252;
+body .fifth_section .last_section .modal_background {
+  background-color: #f0c399;
+  border-radius: 30px;
 }
 @media (min-width: 375px) and (max-width: 768px) {
   body footer .nav_menu {
