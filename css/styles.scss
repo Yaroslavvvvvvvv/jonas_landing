@@ -93,6 +93,7 @@ body {
       line-height: 23.4px;
       letter-spacing: 0.54px;
     }
+
     #modal_first, #modal_second, #modal_third, #modal_fourth, #modal_fifth, #modal_sixth {
       display: none;
       position: fixed;
@@ -245,7 +246,8 @@ body {
         line-height: 73.6px;
         letter-spacing: 2.56px;
       }
-      .modal_background{
+
+      .modal_background {
         background-color: #f0c399;
         border-radius: 30px;
       }
@@ -253,19 +255,20 @@ body {
   }
 
   footer {
-    @media (min-width: 375px) and (max-width: 768px){
-      .nav_menu{
+    @media (min-width: 375px) and (max-width: 768px) {
+      .nav_menu {
 
         background-color: #b7c7ad;
         border-radius: 30px;
         padding: 5px;
       }
-      .nav_link{
+      .nav_link {
         background-color: #3878b0;
         border-radius: 10px 100px / 120px;
         padding: 5px;
       }
     }
+
     .my_nav {
       color: #000;
       font-size: 19px;
@@ -273,7 +276,8 @@ body {
       letter-spacing: 0.2px;
       text-decoration: none;
     }
-    .my_nav:hover{
+
+    .my_nav:hover {
       color: #FFEBD8;
       background-color: #000000;
       border-radius: 30px;

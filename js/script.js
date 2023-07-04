@@ -1,3 +1,4 @@
+//Навігація по кнопкам
 document.getElementById('scrollButton').addEventListener('click', function () {
     let target = document.getElementById('targetParagraph');
     target.scrollIntoView({behavior: 'smooth'});
@@ -21,6 +22,7 @@ document.querySelector('a[href^="#"]').addEventListener('click', function (event
     }
 });
 
+//Підсвічування блоків під картинками
 const first_image = document.getElementById('first_image');
 const first_bottom = document.getElementById('first_bottom');
 
@@ -89,6 +91,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
     modal.find('.modal-body input').val(recipient)
 })
 
+//Модальні картинки
 let firstImage = document.getElementById('first_image');
 let firstModal = document.getElementById('modal_first');
 let modalImage = document.getElementById('image_first');
@@ -185,6 +188,38 @@ function sixthCloseModal() {
 
 sixthModalImage.addEventListener('click', sixthOpenModal);
 sixthModal.addEventListener('click', sixthCloseModal);
+
+
+//Збереження даних з модальної форми у Google Storage
+document.getElementById("submit").addEventListener("click", function () {
+    let recipient = document.getElementById("recipient-name").value;
+    let message = document.getElementById("message-text").value;
+
+    let dataObject = {
+        recipient: recipient,
+        message: message
+    };
+
+    let dataArray = localStorage.getItem("dataArray");
+    if (dataArray) {
+        dataArray = JSON.parse(dataArray);
+    } else {
+        dataArray = [];
+    }
+
+    dataArray.push(dataObject);
+    localStorage.setItem("dataArray", JSON.stringify(dataArray));
+    $('#exampleModal').modal('hide');
+    document.getElementById("recipient-name").value = "";
+    document.getElementById("message-text").value = "";
+});
+
+
+
+
+
+
+
 
 
 

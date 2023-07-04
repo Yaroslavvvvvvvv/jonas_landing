@@ -51,10 +51,10 @@
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="pt-4">
                         <img id="first_image" class="mw-100" src="./img/second_section/watch.png" alt="watch"
-                        onclick="openModal()">
+                             onclick="openModal()">
                         <div class="animate__animated animate__backInLeft" id="modal_first">
                             <img src="./img/second_section/watch.png" alt="enlarged picture" id="image_first"
-                            onclick="closeModal()">
+                                 onclick="closeModal()">
                         </div>
                         <div id="first_bottom" class="bottom_block">
                             <div class="pt-3 pl-4 pb-3">
@@ -65,7 +65,7 @@
                     </div>
                     <div class="pt-4">
                         <img id="second_image" class="mw-100" src="./img/second_section/castro.png" alt="page"
-                        onclick="secondOpenModal()">
+                             onclick="secondOpenModal()">
                         <div class="animate__animated animate__backInLeft" id="modal_second">
                             <img src="./img/second_section/castro.png" alt="enlarged picture" id="image_second"
                                  onclick="secondCloseModal()">
@@ -95,7 +95,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="pt-4">
                         <img id="fourth_image" class="mw-100" src="./img/second_section/ball.png" alt="ball"
-                        onclick="fourthOpenModal()">
+                             onclick="fourthOpenModal()">
                         <div class="animate__animated animate__backInLeft" id="modal_fourth">
                             <img src="./img/second_section/ball.png" alt="enlarged picture" id="image_fourth"
                                  onclick="fourthCloseModal()">
@@ -242,10 +242,10 @@
                         <div class="modal-dialog" role="document">
                             <div class="modal-content modal_background animate__animated animate__backInUp">
                                 <div class="modal-body">
-                                    <form>
+                                    <form id="myForm">
                                         <div class="form-group">
                                             <label for="recipient-name" class="col-form-label font-weight-bold">
-                                                My Email:</label>
+                                                Your Email:</label>
                                             <input type="text" class="form-control" id="recipient-name">
                                         </div>
                                         <div class="form-group">
@@ -258,13 +258,14 @@
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-dark form_button" data-dismiss="modal">Close
                                     </button>
-                                    <button type="button" class="btn btn-dark form_button">Send message</button>
+                                    <button type="button" id="submit"
+                                            class="btn btn-dark form_button">Send message
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -299,7 +300,6 @@
     </div>
 </footer>
 <script src="node_modules/jquery/dist/jquery.js"></script>
-<script src="node_modules/popper.js/dist/popper.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
